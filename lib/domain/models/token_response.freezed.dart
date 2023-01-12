@@ -113,11 +113,10 @@ class __$$_TokenResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_TokenResponse extends _TokenResponse {
-  _$_TokenResponse(
+class _$_TokenResponse implements _TokenResponse {
+  const _$_TokenResponse(
       {@JsonKey(name: 'access_token') required this.accessToken,
-      @JsonKey(name: 'refresh_token') required this.refreshToken})
-      : super._();
+      @JsonKey(name: 'refresh_token') required this.refreshToken});
 
   factory _$_TokenResponse.fromJson(Map<String, dynamic> json) =>
       _$$_TokenResponseFromJson(json);
@@ -163,12 +162,11 @@ class _$_TokenResponse extends _TokenResponse {
   }
 }
 
-abstract class _TokenResponse extends TokenResponse {
-  factory _TokenResponse(
+abstract class _TokenResponse implements TokenResponse {
+  const factory _TokenResponse(
           {@JsonKey(name: 'access_token') required final String accessToken,
           @JsonKey(name: 'refresh_token') required final String refreshToken}) =
       _$_TokenResponse;
-  _TokenResponse._() : super._();
 
   factory _TokenResponse.fromJson(Map<String, dynamic> json) =
       _$_TokenResponse.fromJson;
