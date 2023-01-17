@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:xbcodebase/core/widgets/space.dart';
-import 'package:xbcodebase/features/home/pages/media_details_page.dart';
 
 import '../../../domain/models/media.dart';
 

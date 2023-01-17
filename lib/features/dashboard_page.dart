@@ -4,7 +4,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:xbcodebase/common/widgets/no_app_bar.dart';
 import 'package:xbcodebase/features/home/pages/home_page.dart';
-import 'package:xbcodebase/features/library_page.dart';
+import 'package:xbcodebase/features/location/map_page.dart';
 import 'package:xbcodebase/features/top_charts/top_charts_page.dart';
 import 'package:xbcodebase/features/youtube_page.dart';
 
@@ -218,7 +218,7 @@ class DashboardPage extends HookWidget {
           HomePage(),
           TopChartsPage(),
           YouTubePage(),
-          LibraryPage(),
+          MapPage(),
         ],
       ),
       bottomNavigationBar: SalomonBottomBar(
@@ -247,8 +247,8 @@ class DashboardPage extends HookWidget {
             selectedColor: Theme.of(context).colorScheme.secondary,
           ),
           SalomonBottomBarItem(
-            icon: const Icon(Icons.my_library_music_rounded),
-            title: const Text('Library'),
+            icon: const Icon(Icons.map),
+            title: const Text('Map'),
             selectedColor: Theme.of(context).colorScheme.secondary,
           ),
         ],

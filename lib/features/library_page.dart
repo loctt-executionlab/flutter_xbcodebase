@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:xbcodebase/bridges.dart';
 
-class LibraryPage extends StatelessWidget {
+class LibraryPage extends HookConsumerWidget {
   const LibraryPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return const Text('LibraryPage');
   }
 }

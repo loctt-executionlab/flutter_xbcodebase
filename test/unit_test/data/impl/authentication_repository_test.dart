@@ -3,7 +3,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:xbcodebase/data/impl/authentication_repository_impl.dart';
-import 'package:xbcodebase/domain/models/token_response.dart';
 import 'package:xbcodebase/domain/repositories/authentication_repository.dart';
 import 'package:xbcodebase/tunnels.dart';
 
